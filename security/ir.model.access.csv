@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_park_vehicle_type_manager,park.vehicle.type.manager,model_park_vehicle_type,base.group_parking_manager,1,1,1,1
+access_park_vehicle_type_officer,park.vehicle.type.officer,model_park_vehicle_type,base.group_parking_officer,1,1,1,0
+access_park_vehicle_type_operator,park.vehicle.type.operator,model_park_vehicle_type,base.group_parking_operator,1,0,0,0
+
+access_park_shift_manager,park.shift.manager,model_park_shift,base.group_parking_manager,1,1,1,1
+access_park_shift_officer,park.shift.officer,model_park_shift,base.group_parking_officer,1,1,1,0
+access_park_shift_operator,park.shift.operator,model_park_shift,base.group_parking_operator,1,0,0,0
+
+access_park_image_type_manager,park.image.type.manager,model_park_image_type,base.group_parking_manager,1,1,1,1
+access_park_image_type_officer,park.image.type.officer,model_park_image_type,base.group_parking_officer,1,1,1,0
+access_park_image_type_operator,park.image.type.operator,model_park_image_type,base.group_parking_operator,1,0,0,0

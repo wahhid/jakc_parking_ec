@@ -1,0 +1,16 @@
+<openerp>
+    <data>
+        <menuitem id="park_main_menu" name="Parking"/>			
+		<menuitem name="General" id="base.park_general_menu" parent="park_main_menu"/>
+		<menuitem name="Master" id="base.park_master_menu" parent="park_main_menu"/>			     		       
+        <menuitem name="Transaction" id="base.park_transaction_menu" parent="park_main_menu"/>	        
+        <menuitem name="Membership" id="base.park_membership_menu" parent="park_main_menu"/>	        
+       	               	               
+        <!-- PARKING/MENU -->
+        <!-- GENERAL -->
+    	       
+        <menuitem id="park_vehicle_menu" name="Vehicle Type" parent="base.park_general_menu"  action="action_park_vehicle_type" groups="base.group_parking_manager" sequence="1"/>
+        <menuitem id="park_shift_menu" name="Shift" parent="base.park_general_menu"  action="action_park_shift" groups="base.group_parking_manager" sequence="2"/>
+        <menuitem id="park_image_type_menu" name="Image Type" parent="base.park_general_menu"  action="action_park_image_type" groups="base.group_parking_manager" sequence="3"/>
+    </data>
+</openerp>

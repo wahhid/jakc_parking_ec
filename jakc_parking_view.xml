@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<openerp>
+    <data>
+        <!-- PARK/VEHICLE TYPE -->
+		
+        <record model="ir.ui.view" id="view_park_vehicle_type_form">
+            <field name="name">park.vehicle.type.form</field>
+            <field name="model">park.vehicle.type</field>						
+            <field name="type">form</field>						
+            <field name="arch" type="xml">
+                <form string="Vehicle Type" version="7.0">
+                	<sheet>
+	                    <group>                            
+	                        <field name="name"/>                            
+	                    </group>	                		                	
+                	</sheet>  
+                </form>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="view_park_vehicle_type_tree">
+            <field name="name">park.vehicle.type.tree</field>
+            <field name="model">park.vehicle.type</field>			
+            <field name="type">tree</field>						
+            <field name="arch" type="xml">
+                <tree string="Vehicle Type">
+                    <field name="name"/>		
+                </tree>
+            </field>
+        </record>
+
+        <!-- PARK/SHIFT -->
+		
+        <record model="ir.ui.view" id="view_park_shift_form">
+            <field name="name">park.shift.form</field>
+            <field name="model">park.shift</field>						
+            <field name="type">form</field>						
+            <field name="arch" type="xml">
+                <form string="Shift" version="7.0">
+                	<sheet>
+	                    <group>                            
+	                        <field name="name"/>
+	                        <field name="start_time"/>
+	                        <field name="end_time"/>                            
+	                    </group>                		                	
+                	</sheet> 
+                </form>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="view_park_shift_tree">
+            <field name="name">park.shift.tree</field>
+            <field name="model">park.shift</field>			
+            <field name="type">tree</field>						
+            <field name="arch" type="xml">
+                <tree string="Shift">
+                    <field name="name"/>
+                    <field name="start_time"/>
+                    <field name="end_time"/>		
+                </tree>
+            </field>
+        </record>
+
+        <!-- PARK/IMAGE TYPE -->
+		
+        <record model="ir.ui.view" id="view_park_image_type_form">
+            <field name="name">park.image.type.form</field>
+            <field name="model">park.image.type</field>						
+            <field name="type">form</field>						
+            <field name="arch" type="xml">
+                <form string="Image Type" version="7.0">
+                	<sheet>
+	                    <group>                            
+	                        <field name="name"/>
+	                    </group>                		                	
+                	</sheet> 
+                </form>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="view_park_image_type_tree">
+            <field name="name">park.image.type.tree</field>
+            <field name="model">park.image.type</field>			
+            <field name="type">tree</field>						
+            <field name="arch" type="xml">
+                <tree string="Image Type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+                                                        
+        <!-- PARKING/ACTION -->
+        <!-- VEHICLE TYPE -->
+		<record model="ir.actions.act_window" id="action_park_vehicle_type">
+            <field name="name">Vehicle Type</field>
+            <field name="res_model">park.vehicle.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>		
+        <!-- SHIFT -->
+		<record model="ir.actions.act_window" id="action_park_shift">
+            <field name="name">Shift</field>
+            <field name="res_model">park.shift</field>
+            <field name="view_mode">tree,form</field>
+        </record>		
+        <!-- IMAGE TYPE -->
+		<record model="ir.actions.act_window" id="action_park_image_type">
+            <field name="name">Image Type</field>
+            <field name="res_model">park.image.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>		
+                                                                                                                                                                                                                                                                                        	
+    </data>                
+</openerp>
